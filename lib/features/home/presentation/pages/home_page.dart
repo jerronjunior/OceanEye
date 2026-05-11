@@ -17,6 +17,7 @@ import '../widgets/cta_wave_banner.dart';
 import '../widgets/ocean_bottom_nav_bar.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../map/presentation/pages/map_page.dart';
+import '../../../events/presentation/pages/events_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -67,7 +68,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           _buildHomeDashboard(isDark),
           _buildPlaceholderTab('Scan Waste', '📷', 'AI-powered waste detection coming soon'),
           const MapPage(),
-          _buildPlaceholderTab('Cleanup Events', '🧹', 'Find & join local cleanup events'),
+          const EventsPage(),
           _buildPlaceholderTab('Learn', '📚', 'Educational content about ocean conservation'),
           _buildPlaceholderTab('Profile', '👤', 'Your eco profile & achievements'),
         ],
